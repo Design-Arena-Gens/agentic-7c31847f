@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply min-h-screen bg-midnight text-ivory selection:bg-aurum/30 selection:text-aurum;
+    background-image: radial-gradient(circle at top left, rgba(212, 175, 55, 0.08), transparent 55%),
+      radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.06), transparent 60%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-ivory;
+  }
+
+  main {
+    @apply overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .backdrop-luxury {
+    backdrop-filter: blur(18px);
+  }
+}
